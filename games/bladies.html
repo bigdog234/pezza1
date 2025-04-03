@@ -4,21 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Tab</title>
-    <button>back</button>
-    <a href index.html >
     <style>
       body,
-      button { 
-  background-color: black;
-  color: red;
-  border-radius: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-family: sans-serif;
-  font-size: medium;
-  margin: 0;}
+      button {
+        background-color: black;
+        color: red;
+        border-radius: 5px;
+        padding: 20px 30px;
+        font-family: sans-serif;
+        font-size: medium;
+        margin: 0;
+      }
       html {
         margin: 0;
         padding: 0;
@@ -37,13 +33,13 @@
     </style>
   </head>
   <body>
+    <button onclick="history.back()">Back</button>
+    <a href="index.html">Home</a>
     <iframe
       src="https://blobby-boi.github.io/Baldi/"
-      frameborder="0"
       title="bladies"
     >
-      Browser doesn't support iframes
+      Browser doesn't support iframes.
     </iframe>
   </body>
 </html>
-
