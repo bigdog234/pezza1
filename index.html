@@ -1,29 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Tab</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="download.png">
-  </head>
-  <body>
-    <center>
-      <h1>the man fun</h1>
-      <div>
-        <a href="games/bladies.html">
-          <button>Baldies</button>
-          <a href="games/nzp.html">
-          <button>nzp</button>
-              <a href="games/minecraft.html">
-          <button>minecraft</button>
-             </a>
-            <a href="FNAF/index FNAF.html">
-              <button>fnaf</button> </a>
-            <a href="games/1v1lol">
-              <button>1v1lol</button> </a>
-      </div>
-  
-    </center>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>My Game Zone</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff);
+      background-size: 300%;
+      animation: colorFlow 15s ease infinite;
+    }
+
+    @keyframes colorFlow {
+      0% { background-position: 0% }
+      50% { background-position: 100% }
+      100% { background-position: 0% }
+    }
+
+    @keyframes rgbText {
+      0% { color: #ff0000 }
+      50% { color: #00ff00 }
+      100% { color: #0000ff }
+    }
+
+    h1 {
+      text-align: center;
+      animation: rgbText 3s infinite;
+      margin-bottom: 30px;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .game-block {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .game-block:hover {
+      transform: translateY(-5px);
+    }
+
+    .game-block img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .game-block h3 {
+      margin: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 My Block Games</h1>
+  <div class="game-grid">
+    <a href="games/1v1lo.html" class="game-block">
+      <img src="images/game1.jpg" alt="Game 1">
+      <h3>1v1.lol</h3>
+    </a>
+    <a href="games/game2.html" class="game-block">
+      <img src="images/game2.jpg" alt="Game 2">
+      <h3>Game 2 Name</h3>
+    </a>
+  </div>
+</body>
 </html>
