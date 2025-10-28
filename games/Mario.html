@@ -28,42 +28,45 @@
 
     .game-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
       padding: 40px;
+      max-width: 1400px;
+      margin: auto;
     }
 
     .game {
       background: #1b1b1b;
-      border-radius: 10px;
-      padding: 20px;
+      border-radius: 12px;
+      padding: 25px;
       transition: transform 0.2s, background 0.3s;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     }
 
     .game:hover {
       background: #272727;
-      transform: scale(1.05);
+      transform: scale(1.04);
     }
 
     .game iframe {
       width: 100%;
-      height: 200px;
+      height: 400px; /* Larger play area */
       border: none;
       border-radius: 8px;
       background: #000;
     }
 
     .game-title {
-      font-size: 20px;
-      margin-top: 10px;
+      font-size: 22px;
+      margin-top: 12px;
       color: #00ff88;
     }
 
     .fullscreen-btn {
-      margin-top: 10px;
+      margin-top: 12px;
       background: #00ff88;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 24px;
       font-size: 16px;
       color: #000;
       border-radius: 6px;
@@ -86,9 +89,9 @@
 
   <div class="game-container">
 
-    <!-- Example Game -->
+    <!-- 1v1.lol Game -->
     <div class="game">
-      <iframe id="game1" src="https://bigdog234.github.io/HTML-Games-V2/mario"></iframe>
+      <iframe id="game1" src="https://bigdog234.github.io/HTML-Games-V2/mario/"></iframe>
       <div class="game-title">mario</div>
       <button class="fullscreen-btn" onclick="openFullscreen('game1')">Full Screen</button>
     </div>
@@ -97,7 +100,7 @@
     <!-- Copy this block and change the iframe src, id, and title -->
     <!--
     <div class="game">
-      <iframe id="game2" src="game-link.html"></iframe>
+      <iframe id="game2" src="your-game-link.html"></iframe>
       <div class="game-title">Game Name</div>
       <button class="fullscreen-btn" onclick="openFullscreen('game2')">Full Screen</button>
     </div>
@@ -110,11 +113,11 @@
       const iframe = document.getElementById(id);
       if (iframe.requestFullscreen) {
         iframe.requestFullscreen();
-      } else if (iframe.mozRequestFullScreen) { // Firefox
+      } else if (iframe.mozRequestFullScreen) {
         iframe.mozRequestFullScreen();
-      } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
+      } else if (iframe.webkitRequestFullscreen) {
         iframe.webkitRequestFullscreen();
-      } else if (iframe.msRequestFullscreen) { // IE/Edge
+      } else if (iframe.msRequestFullscreen) {
         iframe.msRequestFullscreen();
       }
     }
