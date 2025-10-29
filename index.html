@@ -2,123 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>New Tab</title>
+  <title>Game Hub</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
-      background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff);
-      background-size: 300%;
-      animation: colorFlow 15s ease infinite;
-    }
-
-    @keyframes colorFlow {
-      0% { background-position: 0% }
-      50% { background-position: 100% }
-      100% { background-position: 0% }
-    }
-
-    @keyframes rgbText {
-      0% { color: #ff0000 }
-      50% { color: #00ff00 }
-      100% { color: #0000ff }
+      background: #0a0a0a;
+      color: white;
     }
 
     h1 {
       text-align: center;
-      animation: rgbText 3s infinite;
-      margin-bottom: 30px;
+      color: #00ff88;
+      font-size: 40px;
+      margin-bottom: 40px;
     }
 
     .game-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 25px;
     }
 
     .game-block {
-      background: #fff;
-      border-radius: 10px;
+      background: #1b1b1b;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, background 0.3s;
       text-align: center;
       text-decoration: none;
       color: inherit;
     }
 
     .game-block:hover {
-      transform: translateY(-5px);
+      transform: scale(1.05);
+      background: #272727;
     }
 
     .game-block img {
       width: 100%;
-      height: 150px;
+      height: 160px;
       object-fit: cover;
+      border-bottom: 2px solid #00ff88;
     }
 
     .game-block h3 {
-      margin: 10px;
-      font-size: 18px;
-      color: #333;
+      margin: 15px 0;
+      font-size: 20px;
+      color: #00ff88;
     }
   </style>
 </head>
 <body>
-  <h1>no games alowd</h1>
-   </a>
+  <h1>🎮 Game Hub 🎮</h1>
+
+  <div class="game-grid">
     <a href="FNAF/index.html" class="game-block">
       <img src="images/fnaf.jpeg" alt="Game 7">
       <h3>FNAF</h3>
     </a>
-  <div class="game-grid">
+
     <a href="games/1v1lol.html" class="game-block">
       <img src="images/1v1lol.jpg" alt="Game 1">
       <h3>1v1.lol</h3>
     </a>
+
     <a href="games/baldi's.html" class="game-block">
       <img src="images/baldi's.jpg" alt="Game 2">
-      <h3>baldi's basics</h3>
+      <h3>Baldi's Basics</h3>
     </a>
-     <a href="games/nzp.html" class="game-block">
+
+    <a href="games/nzp.html" class="game-block">
       <img src="images/nzp.jpg" alt="Game 3">
-      <h3>nzp.gay</h3>
-    </a> 
+      <h3>NZP.gay</h3>
+    </a>
+
     <a href="games/CrazyCattle3d.html" class="game-block">
       <img src="images/CrazyCattle3d.jpeg" alt="Game 5">
-      <h3>CrazyCattle3d</h3>
+      <h3>Crazy Cattle 3D</h3>
     </a>
-      <a href="games/thereisnogame.html" class="game-block">
+
+    <a href="games/thereisnogame.html" class="game-block">
       <img src="images/thereisnogame.jpeg" alt="Game 6">
-      <h3>there is no game</h3>
+      <h3>There Is No Game</h3>
     </a>
-      <a href="games/8ballpool.html" class="game-block">
+
+    <a href="games/8ballpool.html" class="game-block">
       <img src="images/8ballpool.jpeg" alt="Game 7">
-      <h3>8ball pool</h3>
+      <h3>8 Ball Pool</h3>
     </a>
-     <a href="games/Mario.html" class="game-block">
+
+    <a href="games/Mario.html" class="game-block">
       <img src="images/mario.webp" alt="Game 7">
-      <h3>mario</h3>
+      <h3>Mario</h3>
     </a>
-         <a href="games/retrobowl.html" class="game-block">
+
+    <a href="games/retrobowl.html" class="game-block">
       <img src="images/retrobowl.png" alt="Game 7">
-      <h3>retor bow</h3>
+      <h3>Retro Bowl</h3>
     </a>
+
     <a href="games/worldshardestgame.html" class="game-block">
       <img src="images/worldshardest1.png" alt="Game 7">
-      <h3>worlds hardest game 1</h3>
+      <h3>World’s Hardest Game 1</h3>
     </a>
-     <a href="games/worldshardestgame2.html" class="game-block">
+
+    <a href="games/worldshardestgame2.html" class="game-block">
       <img src="images/worldshardestgame2.jpg" alt="Game 7">
-      <h3>worlds hardest game 2</h3>
+      <h3>World’s Hardest Game 2</h3>
     </a>
+
     <a href="games/polytrack.html" class="game-block">
       <img src="images/polytrack.jpg" alt="Game 7">
-      <h3>polytrack</h3>
+      <h3>Polytrack</h3>
     </a>
   </div>
 </body>
 </html>
-2
